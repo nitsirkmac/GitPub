@@ -8,8 +8,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/drinks', (req, res) => {
-    // res.send(drinks)
-    console.log(drinks)
+    res.render('drinks_index.ejs')
 })
 
 app.listen(port, (req, res) => {
