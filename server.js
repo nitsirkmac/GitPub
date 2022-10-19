@@ -26,8 +26,8 @@ app.get('/drinks/:id', (req, res) => {
 // Food Index Route
 app.get('/food', (req, res) => {
     res.render('food_index.ejs', {
-        meals: food,
-    }
+        food: food
+    })
 })
 
 // Food Show Route
